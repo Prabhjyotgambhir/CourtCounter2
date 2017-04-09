@@ -22,16 +22,22 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Team A"
-        android:layout_marginTop="20dp"
-        android:gravity="center_horizontal"/>
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal"
+        android:textSize="14sp"
+        android:textColor="#616161"
+        android:fontFamily="sans-serif-medium"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="0"
-        android:textSize="14sp"
+        android:textSize="56sp"
         android:layout_marginTop="20dp"
        android:gravity="center_horizontal"
-        android:id="@+id/teama_score" />
+        android:id="@+id/teama_score"
+        android:fontFamily="sans-serif-light"
+        android:textColor="#000000"
+        android:layout_marginBottom="24dp"/>
 
   <Button
       android:layout_width="match_parent"
@@ -39,6 +45,8 @@
       android:layout_marginTop="20dp"
       android:text="+1 points"
       android:onClick="teama_1score"
+      android:layout_marginLeft="24dp"
+      android:layout_marginRight="24dp"
       />
     <Button
         android:layout_width="match_parent"
@@ -46,6 +54,8 @@
         android:layout_marginTop="20dp"
         android:text="+2 points"
         android:onClick="teama_2score"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
         />
     <Button
         android:layout_width="match_parent"
@@ -53,8 +63,17 @@
         android:layout_marginTop="20dp"
         android:text="+3 points"
         android:onClick="teama_3score"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
         />
+
+
 </LinearLayout>
+  <TextView
+      android:layout_width="1dp"
+      android:layout_height="match_parent"
+      android:background="@android:color/darker_gray"
+      android:layout_marginTop="60dp"/>
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -66,16 +85,22 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Team B"
-            android:layout_marginTop="20dp"
-            android:gravity="center_horizontal"/>
+            android:layout_marginTop="16dp"
+            android:gravity="center_horizontal"
+            android:textSize="14sp"
+            android:textColor="#616161"
+            android:fontFamily="sans-serif-medium"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="0"
-            android:textSize="14sp"
+            android:textSize="56sp"
             android:layout_marginTop="20dp"
             android:gravity="center_horizontal"
             android:id="@+id/teamb_score"
+            android:fontFamily="sans-serif-light"
+            android:textColor="#000000"
+            android:layout_marginBottom="24dp"
             />
 
         <Button
@@ -84,6 +109,8 @@
             android:layout_marginTop="20dp"
             android:text="+1 points"
             android:onClick="teamb_1score"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
             />
         <Button
             android:layout_width="match_parent"
@@ -91,6 +118,8 @@
             android:layout_marginTop="20dp"
             android:text="+2 points"
             android:onClick="teamb_2score"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
             />
         <Button
             android:layout_width="match_parent"
@@ -98,6 +127,8 @@
             android:layout_marginTop="20dp"
             android:text="+3 points"
             android:onClick="teamb_3score"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
             />
     </LinearLayout>
 
@@ -109,5 +140,6 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="100dp"
         android:id="@+id/reset_button"
-        android:onClick="resitit"/>
+        android:onClick="resitit"
+        android:layout_marginBottom="24dp"/>
 </LinearLayout>
