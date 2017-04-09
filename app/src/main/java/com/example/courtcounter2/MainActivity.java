@@ -56,8 +56,10 @@ public class MainActivity extends AppCompatActivity {
     }
     public void resitit(View view)
     {
-        teamadisplay(0);
-        teambdisplay(0);
+        teamascore = 0;
+        teambscore = 0;
+        teamadisplay(teamascore);
+        teambdisplay(teambscore);
     }
 
 
